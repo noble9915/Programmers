@@ -4,16 +4,16 @@ class Solution {
         int[] answer = new int[2];
     
        
-        int n = denom1 * denom2;   // ºĞ¼öÀÇ ÇÕ
-        int de = denom2 * numer1 + denom1 * numer2;  //ºĞ¸ğÀÇ ÃÖ´ë °ø¾à¼ö
-        int max = 1;    //±â¾àºĞ¼ö
+        int n = denom1 * denom2;   // ë¶„ìˆ˜ì˜ í•©
+        int de = denom2 * numer1 + denom1 * numer2;  //ë¶„ëª¨ì˜ ìµœëŒ€ ê³µì•½ìˆ˜
+        int max = 1;    //ê¸°ì•½ë¶„ìˆ˜
         
         for (int i =1; i <= n && i <= de; i++){
             if(n%i==0 && de%i == 0){
                 max = i;
             }
         }
-         // ºĞ¸ğ¿Í ºĞÀÚ¸¦ ÃÖ´ë °ø¾à¼ö·Î ³ª´²ÁÖ¸é ¸®ÅÏ°ª
+         // ë¶„ëª¨ì™€ ë¶„ìë¥¼ ìµœëŒ€ ê³µì•½ìˆ˜ë¡œ ë‚˜ëˆ ì£¼ë©´ ë¦¬í„´ê°’
         
         answer[0] = de / max;
         answer[1] = n / max;
