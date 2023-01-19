@@ -1,0 +1,8 @@
+class Solution {
+    public int solution(int slice, int n) {
+        int answer = 0;
+        int pizza = (int)Math.ceil((double)n/slice); //math.ceil를 이용해서 올림계산
+        answer= pizza;
+        return answer;
+    }
+}
